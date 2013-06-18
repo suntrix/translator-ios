@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>YES</key>
+	<string>TAK</string>
+	<key>NO</key>
+	<string>NIE</string>
+	<key>Yes</key>
+	<string>Tak</string>
+	<key>No</key>
+	<string>Nie</string>
+	<key>Test string</key>
+	<string>Ciąg testowy</string>
+</dict>
+</plist>
