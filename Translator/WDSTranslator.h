@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 WEB DESIGN STUDIO Sebastian Owodziń. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 @interface WDSTranslator : NSObject
 
@@ -32,19 +32,19 @@
 - (NSString *)translate:(NSString *)text;
 
 /**
- Translates the given text array using default language
- @param NSArray texts
- @return NSArray
- */
-- (NSArray *)translateMany:(NSArray *)texts;
-
-/**
  Translates the given text using given language
  @param NSString text
  @param NSString language
  @return NSString
  */
 - (NSString *)translate:(NSString *)text toLanguage:(NSString *)language;
+
+/**
+ Translates the given text array using default language
+ @param NSArray texts
+ @return NSArray
+ */
+- (NSArray *)translateMany:(NSArray *)texts;
 
 /**
  Translates the given text array using given language

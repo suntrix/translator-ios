@@ -55,15 +55,9 @@
     return [self translate:text toLanguage:self.translationsLanguageCode];
 }
 
-- (NSArray *)translateMany:(NSArray *)texts
+- (void)translateView:(UIView *)viewObject
 {
-    if ( nil == self.translationsLanguageCode )
-    {
-        [NSException raise:@"Translations default language is not set!"
-                    format:@"You need to set it, to use this method."];
-    }
     
-    return [self translateMany:texts toLanguage:self.translationsLanguageCode];
 }
 
 - (NSString *)translate:(NSString *)text toLanguage:(NSString *)language
@@ -80,6 +74,22 @@
     }
     
     return translation;
+}
+
+- (void)translateView:(UIView *)viewObject toLanguage:(NSString *)language
+{
+    
+}
+
+- (NSArray *)translateMany:(NSArray *)texts
+{
+    if ( nil == self.translationsLanguageCode )
+    {
+        [NSException raise:@"Translations default language is not set!"
+                    format:@"You need to set it, to use this method."];
+    }
+    
+    return [self translateMany:texts toLanguage:self.translationsLanguageCode];
 }
 
 - (NSArray *)translateMany:(NSArray *)texts toLanguage:(NSString *)language
