@@ -55,11 +55,6 @@
     return [self translate:text toLanguage:self.translationsLanguageCode];
 }
 
-- (void)translateView:(UIView *)viewObject
-{
-    
-}
-
 - (NSString *)translate:(NSString *)text toLanguage:(NSString *)language
 {
     if ( NO == [self __translationsCached:language] )
@@ -67,18 +62,13 @@
         [self __cacheTranslations:language];
     }
     
-    NSString *translation = [[__translationsCache objectForKey:language] objectForKey:text];
+    NSString *translation = __translationsCache[language][text];
     if ( nil == translation )
     {
         translation = text;
     }
     
     return translation;
-}
-
-- (void)translateView:(UIView *)viewObject toLanguage:(NSString *)language
-{
-    
 }
 
 - (NSArray *)translateMany:(NSArray *)texts
@@ -99,7 +89,7 @@
         [self __cacheTranslations:language];
     }
     
-    return [[__translationsCache objectForKey:language] objectsForKeys:texts notFoundMarker:@""];
+    return [__translationsCache[language] objectsForKeys:texts notFoundMarker:@""];
 }
 
 - (void)loadTranslations:(NSArray *)languages
@@ -125,7 +115,7 @@
     self = [super init];
     if ( nil != self )
     {
-        __translationsCache = [[NSMutableDictionary alloc] init];
+        __translationsCache = [NSMutableDictionary dictionary];
     }
     
     return self;
@@ -149,10 +139,7 @@
                     format:@"%@.plist file is missing or not readable.", filename];
     }
     
-    [__translationsCache addEntriesFromDictionary:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                   [NSDictionary dictionaryWithContentsOfFile:path],
-                                                   language,
-                                                   nil]];
+    [__translationsCache addEntriesFromDictionary:@{language: [NSDictionary dictionaryWithContentsOfFile:path]}];
 }
 
 @end

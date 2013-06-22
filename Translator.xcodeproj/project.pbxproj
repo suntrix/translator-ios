@@ -7,188 +7,184 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E95EB371177071E80027A0F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95EB370177071E80027A0F9 /* Foundation.framework */; };
-		E95EB376177071E80027A0F9 /* WDSTranslator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E95EB375177071E80027A0F9 /* WDSTranslator.h */; };
-		E95EB378177071E80027A0F9 /* WDSTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = E95EB377177071E80027A0F9 /* WDSTranslator.m */; };
-		E95EB380177071E80027A0F9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95EB37F177071E80027A0F9 /* SenTestingKit.framework */; };
-		E95EB383177071E80027A0F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95EB370177071E80027A0F9 /* Foundation.framework */; };
-		E95EB386177071E80027A0F9 /* libTranslator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E95EB36D177071E80027A0F9 /* libTranslator.a */; };
-		E95EB38C177071E80027A0F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E95EB38A177071E80027A0F9 /* InfoPlist.strings */; };
-		E95EB38F177071E80027A0F9 /* WDSTranslatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E95EB38E177071E80027A0F9 /* WDSTranslatorTests.m */; };
-		E95EB3991770759B0027A0F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95EB3981770759B0027A0F9 /* UIKit.framework */; };
-		E95EB39B17708F500027A0F9 /* translations.pl.plist in Resources */ = {isa = PBXBuildFile; fileRef = E95EB39A17708F500027A0F9 /* translations.pl.plist */; };
-		E95EB39E17708F790027A0F9 /* translations.fr.plist in Resources */ = {isa = PBXBuildFile; fileRef = E95EB39D17708F790027A0F9 /* translations.fr.plist */; };
-		E95EB3AB1772725C0027A0F9 /* WDSTranslator+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = E95EB3AA1772725C0027A0F9 /* WDSTranslator+UIView.m */; };
-		E95EB3AE1772765F0027A0F9 /* WDSTranslator+UILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E95EB3AD1772765F0027A0F9 /* WDSTranslator+UILabel.m */; };
-		E95EB3B11772766F0027A0F9 /* WDSTranslator+UIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E95EB3B01772766F0027A0F9 /* WDSTranslator+UIButton.m */; };
-		E95EB3B4177276910027A0F9 /* WDSTranslator+UITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E95EB3B3177276910027A0F9 /* WDSTranslator+UITextField.m */; };
+		E924E03A1774A1980002B24C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0391774A1980002B24C /* Foundation.framework */; };
+		E924E0481774A1990002B24C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0471774A1990002B24C /* XCTest.framework */; };
+		E924E0491774A1990002B24C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0391774A1980002B24C /* Foundation.framework */; };
+		E924E04E1774A1990002B24C /* libTranslator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0361774A1980002B24C /* libTranslator.a */; };
+		E924E0541774A1990002B24C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E924E0521774A1990002B24C /* InfoPlist.strings */; };
+		E924E0561774A1990002B24C /* TranslatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E924E0551774A1990002B24C /* TranslatorTests.m */; };
+		E924E0611774A2540002B24C /* WDSTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = E924E0601774A2540002B24C /* WDSTranslator.m */; };
+		E924E0641774A29C0002B24C /* WDSTranslator+UILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E924E0631774A29C0002B24C /* WDSTranslator+UILabel.m */; };
+		E924E0661774A4370002B24C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0651774A4370002B24C /* UIKit.framework */; };
+		E924E06B1774A95D0002B24C /* translations.pl.plist in Resources */ = {isa = PBXBuildFile; fileRef = E924E0681774A4620002B24C /* translations.pl.plist */; };
+		E924E06C1774A9600002B24C /* translations.fr.plist in Resources */ = {isa = PBXBuildFile; fileRef = E924E0671774A4620002B24C /* translations.fr.plist */; };
+		E9819DE71774D7B900F02F02 /* WDSTranslator+UIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DE21774D7B900F02F02 /* WDSTranslator+UIButton.m */; };
+		E9819DE81774D7B900F02F02 /* WDSTranslator+UITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DE41774D7B900F02F02 /* WDSTranslator+UITextField.m */; };
+		E9819DE91774D7B900F02F02 /* WDSTranslator+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DE61774D7B900F02F02 /* WDSTranslator+UIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E95EB384177071E80027A0F9 /* PBXContainerItemProxy */ = {
+		E924E04C1774A1990002B24C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E95EB365177071E80027A0F9 /* Project object */;
+			containerPortal = E924E02E1774A1980002B24C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E95EB36C177071E80027A0F9;
+			remoteGlobalIDString = E924E0351774A1980002B24C;
 			remoteInfo = Translator;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E95EB36B177071E80027A0F9 /* CopyFiles */ = {
+		E924E0341774A1980002B24C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
+			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				E95EB376177071E80027A0F9 /* WDSTranslator.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E95EB36D177071E80027A0F9 /* libTranslator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTranslator.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E95EB370177071E80027A0F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E95EB374177071E80027A0F9 /* Translator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Translator-Prefix.pch"; sourceTree = "<group>"; };
-		E95EB375177071E80027A0F9 /* WDSTranslator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDSTranslator.h; sourceTree = "<group>"; };
-		E95EB377177071E80027A0F9 /* WDSTranslator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDSTranslator.m; sourceTree = "<group>"; };
-		E95EB37E177071E80027A0F9 /* TranslatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E95EB37F177071E80027A0F9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E95EB389177071E80027A0F9 /* TranslatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TranslatorTests-Info.plist"; sourceTree = "<group>"; };
-		E95EB38B177071E80027A0F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E95EB38D177071E80027A0F9 /* WDSTranslatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDSTranslatorTests.h; sourceTree = "<group>"; };
-		E95EB38E177071E80027A0F9 /* WDSTranslatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDSTranslatorTests.m; sourceTree = "<group>"; };
-		E95EB3981770759B0027A0F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E95EB39A17708F500027A0F9 /* translations.pl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = translations.pl.plist; sourceTree = "<group>"; };
-		E95EB39D17708F790027A0F9 /* translations.fr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = translations.fr.plist; sourceTree = "<group>"; };
-		E95EB3A91772725C0027A0F9 /* WDSTranslator+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UIView.h"; sourceTree = "<group>"; };
-		E95EB3AA1772725C0027A0F9 /* WDSTranslator+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UIView.m"; sourceTree = "<group>"; };
-		E95EB3AC1772765F0027A0F9 /* WDSTranslator+UILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UILabel.h"; sourceTree = "<group>"; };
-		E95EB3AD1772765F0027A0F9 /* WDSTranslator+UILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UILabel.m"; sourceTree = "<group>"; };
-		E95EB3AF1772766F0027A0F9 /* WDSTranslator+UIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UIButton.h"; sourceTree = "<group>"; };
-		E95EB3B01772766F0027A0F9 /* WDSTranslator+UIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UIButton.m"; sourceTree = "<group>"; };
-		E95EB3B2177276910027A0F9 /* WDSTranslator+UITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UITextField.h"; sourceTree = "<group>"; };
-		E95EB3B3177276910027A0F9 /* WDSTranslator+UITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UITextField.m"; sourceTree = "<group>"; };
+		E924E0361774A1980002B24C /* libTranslator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTranslator.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E924E0391774A1980002B24C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E924E03D1774A1980002B24C /* Translator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Translator-Prefix.pch"; sourceTree = "<group>"; };
+		E924E0461774A1990002B24C /* TranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E924E0471774A1990002B24C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E924E0511774A1990002B24C /* TranslatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TranslatorTests-Info.plist"; sourceTree = "<group>"; };
+		E924E0531774A1990002B24C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E924E0551774A1990002B24C /* TranslatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslatorTests.m; sourceTree = "<group>"; };
+		E924E05F1774A2540002B24C /* WDSTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSTranslator.h; sourceTree = "<group>"; };
+		E924E0601774A2540002B24C /* WDSTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSTranslator.m; sourceTree = "<group>"; };
+		E924E0621774A29C0002B24C /* WDSTranslator+UILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UILabel.h"; sourceTree = "<group>"; };
+		E924E0631774A29C0002B24C /* WDSTranslator+UILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UILabel.m"; sourceTree = "<group>"; };
+		E924E0651774A4370002B24C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E924E0671774A4620002B24C /* translations.fr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = translations.fr.plist; sourceTree = "<group>"; };
+		E924E0681774A4620002B24C /* translations.pl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = translations.pl.plist; sourceTree = "<group>"; };
+		E9819DE11774D7B900F02F02 /* WDSTranslator+UIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UIButton.h"; sourceTree = "<group>"; };
+		E9819DE21774D7B900F02F02 /* WDSTranslator+UIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UIButton.m"; sourceTree = "<group>"; };
+		E9819DE31774D7B900F02F02 /* WDSTranslator+UITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UITextField.h"; sourceTree = "<group>"; };
+		E9819DE41774D7B900F02F02 /* WDSTranslator+UITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UITextField.m"; sourceTree = "<group>"; };
+		E9819DE51774D7B900F02F02 /* WDSTranslator+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UIView.h"; sourceTree = "<group>"; };
+		E9819DE61774D7B900F02F02 /* WDSTranslator+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UIView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E95EB36A177071E80027A0F9 /* Frameworks */ = {
+		E924E0331774A1980002B24C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E95EB3991770759B0027A0F9 /* UIKit.framework in Frameworks */,
-				E95EB371177071E80027A0F9 /* Foundation.framework in Frameworks */,
+				E924E0661774A4370002B24C /* UIKit.framework in Frameworks */,
+				E924E03A1774A1980002B24C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E95EB37A177071E80027A0F9 /* Frameworks */ = {
+		E924E0431774A1990002B24C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E95EB380177071E80027A0F9 /* SenTestingKit.framework in Frameworks */,
-				E95EB383177071E80027A0F9 /* Foundation.framework in Frameworks */,
-				E95EB386177071E80027A0F9 /* libTranslator.a in Frameworks */,
+				E924E0481774A1990002B24C /* XCTest.framework in Frameworks */,
+				E924E0491774A1990002B24C /* Foundation.framework in Frameworks */,
+				E924E04E1774A1990002B24C /* libTranslator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E95EB364177071E80027A0F9 = {
+		E924E02D1774A1980002B24C = {
 			isa = PBXGroup;
 			children = (
-				E95EB372177071E80027A0F9 /* Translator */,
-				E95EB387177071E80027A0F9 /* TranslatorTests */,
-				E95EB36F177071E80027A0F9 /* Frameworks */,
-				E95EB36E177071E80027A0F9 /* Products */,
+				E924E03B1774A1980002B24C /* Translator */,
+				E924E04F1774A1990002B24C /* TranslatorTests */,
+				E924E0381774A1980002B24C /* Frameworks */,
+				E924E0371774A1980002B24C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E95EB36E177071E80027A0F9 /* Products */ = {
+		E924E0371774A1980002B24C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E95EB36D177071E80027A0F9 /* libTranslator.a */,
-				E95EB37E177071E80027A0F9 /* TranslatorTests.octest */,
+				E924E0361774A1980002B24C /* libTranslator.a */,
+				E924E0461774A1990002B24C /* TranslatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E95EB36F177071E80027A0F9 /* Frameworks */ = {
+		E924E0381774A1980002B24C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E95EB3981770759B0027A0F9 /* UIKit.framework */,
-				E95EB370177071E80027A0F9 /* Foundation.framework */,
-				E95EB37F177071E80027A0F9 /* SenTestingKit.framework */,
+				E924E0651774A4370002B24C /* UIKit.framework */,
+				E924E0391774A1980002B24C /* Foundation.framework */,
+				E924E0471774A1990002B24C /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E95EB372177071E80027A0F9 /* Translator */ = {
+		E924E03B1774A1980002B24C /* Translator */ = {
 			isa = PBXGroup;
 			children = (
-				E95EB375177071E80027A0F9 /* WDSTranslator.h */,
-				E95EB377177071E80027A0F9 /* WDSTranslator.m */,
-				E95EB3A91772725C0027A0F9 /* WDSTranslator+UIView.h */,
-				E95EB3AA1772725C0027A0F9 /* WDSTranslator+UIView.m */,
-				E95EB3AC1772765F0027A0F9 /* WDSTranslator+UILabel.h */,
-				E95EB3AD1772765F0027A0F9 /* WDSTranslator+UILabel.m */,
-				E95EB3AF1772766F0027A0F9 /* WDSTranslator+UIButton.h */,
-				E95EB3B01772766F0027A0F9 /* WDSTranslator+UIButton.m */,
-				E95EB3B2177276910027A0F9 /* WDSTranslator+UITextField.h */,
-				E95EB3B3177276910027A0F9 /* WDSTranslator+UITextField.m */,
-				E95EB373177071E80027A0F9 /* Supporting Files */,
+				E924E05F1774A2540002B24C /* WDSTranslator.h */,
+				E924E0601774A2540002B24C /* WDSTranslator.m */,
+				E9819DEA1774D7C500F02F02 /* Categories */,
+				E924E03C1774A1980002B24C /* Supporting Files */,
 			);
 			path = Translator;
 			sourceTree = "<group>";
 		};
-		E95EB373177071E80027A0F9 /* Supporting Files */ = {
+		E924E03C1774A1980002B24C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E95EB374177071E80027A0F9 /* Translator-Prefix.pch */,
+				E924E03D1774A1980002B24C /* Translator-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E95EB387177071E80027A0F9 /* TranslatorTests */ = {
+		E924E04F1774A1990002B24C /* TranslatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				E95EB39C17708F5A0027A0F9 /* Resources */,
-				E95EB38D177071E80027A0F9 /* WDSTranslatorTests.h */,
-				E95EB38E177071E80027A0F9 /* WDSTranslatorTests.m */,
-				E95EB388177071E80027A0F9 /* Supporting Files */,
+				E924E0671774A4620002B24C /* translations.fr.plist */,
+				E924E0681774A4620002B24C /* translations.pl.plist */,
+				E924E0551774A1990002B24C /* TranslatorTests.m */,
+				E924E0501774A1990002B24C /* Supporting Files */,
 			);
 			path = TranslatorTests;
 			sourceTree = "<group>";
 		};
-		E95EB388177071E80027A0F9 /* Supporting Files */ = {
+		E924E0501774A1990002B24C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E95EB389177071E80027A0F9 /* TranslatorTests-Info.plist */,
-				E95EB38A177071E80027A0F9 /* InfoPlist.strings */,
+				E924E0511774A1990002B24C /* TranslatorTests-Info.plist */,
+				E924E0521774A1990002B24C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E95EB39C17708F5A0027A0F9 /* Resources */ = {
+		E9819DEA1774D7C500F02F02 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				E95EB39A17708F500027A0F9 /* translations.pl.plist */,
-				E95EB39D17708F790027A0F9 /* translations.fr.plist */,
+				E924E0621774A29C0002B24C /* WDSTranslator+UILabel.h */,
+				E924E0631774A29C0002B24C /* WDSTranslator+UILabel.m */,
+				E9819DE11774D7B900F02F02 /* WDSTranslator+UIButton.h */,
+				E9819DE21774D7B900F02F02 /* WDSTranslator+UIButton.m */,
+				E9819DE31774D7B900F02F02 /* WDSTranslator+UITextField.h */,
+				E9819DE41774D7B900F02F02 /* WDSTranslator+UITextField.m */,
+				E9819DE51774D7B900F02F02 /* WDSTranslator+UIView.h */,
+				E9819DE61774D7B900F02F02 /* WDSTranslator+UIView.m */,
 			);
-			name = Resources;
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E95EB36C177071E80027A0F9 /* Translator */ = {
+		E924E0351774A1980002B24C /* Translator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E95EB392177071E80027A0F9 /* Build configuration list for PBXNativeTarget "Translator" */;
+			buildConfigurationList = E924E0591774A1990002B24C /* Build configuration list for PBXNativeTarget "Translator" */;
 			buildPhases = (
-				E95EB369177071E80027A0F9 /* Sources */,
-				E95EB36A177071E80027A0F9 /* Frameworks */,
-				E95EB36B177071E80027A0F9 /* CopyFiles */,
+				E924E0321774A1980002B24C /* Sources */,
+				E924E0331774A1980002B24C /* Frameworks */,
+				E924E0341774A1980002B24C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -196,120 +192,103 @@
 			);
 			name = Translator;
 			productName = Translator;
-			productReference = E95EB36D177071E80027A0F9 /* libTranslator.a */;
+			productReference = E924E0361774A1980002B24C /* libTranslator.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		E95EB37D177071E80027A0F9 /* TranslatorTests */ = {
+		E924E0451774A1990002B24C /* TranslatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E95EB395177071E80027A0F9 /* Build configuration list for PBXNativeTarget "TranslatorTests" */;
+			buildConfigurationList = E924E05C1774A1990002B24C /* Build configuration list for PBXNativeTarget "TranslatorTests" */;
 			buildPhases = (
-				E95EB379177071E80027A0F9 /* Sources */,
-				E95EB37A177071E80027A0F9 /* Frameworks */,
-				E95EB37B177071E80027A0F9 /* Resources */,
-				E95EB37C177071E80027A0F9 /* ShellScript */,
+				E924E0421774A1990002B24C /* Sources */,
+				E924E0431774A1990002B24C /* Frameworks */,
+				E924E0441774A1990002B24C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E95EB385177071E80027A0F9 /* PBXTargetDependency */,
+				E924E04D1774A1990002B24C /* PBXTargetDependency */,
 			);
 			name = TranslatorTests;
 			productName = TranslatorTests;
-			productReference = E95EB37E177071E80027A0F9 /* TranslatorTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = E924E0461774A1990002B24C /* TranslatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E95EB365177071E80027A0F9 /* Project object */ = {
+		E924E02E1774A1980002B24C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "WEB DESIGN STUDIO Sebastian Owodziń";
 			};
-			buildConfigurationList = E95EB368177071E80027A0F9 /* Build configuration list for PBXProject "Translator" */;
+			buildConfigurationList = E924E0311774A1980002B24C /* Build configuration list for PBXProject "Translator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E95EB364177071E80027A0F9;
-			productRefGroup = E95EB36E177071E80027A0F9 /* Products */;
+			mainGroup = E924E02D1774A1980002B24C;
+			productRefGroup = E924E0371774A1980002B24C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E95EB36C177071E80027A0F9 /* Translator */,
-				E95EB37D177071E80027A0F9 /* TranslatorTests */,
+				E924E0351774A1980002B24C /* Translator */,
+				E924E0451774A1990002B24C /* TranslatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E95EB37B177071E80027A0F9 /* Resources */ = {
+		E924E0441774A1990002B24C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E95EB38C177071E80027A0F9 /* InfoPlist.strings in Resources */,
-				E95EB39B17708F500027A0F9 /* translations.pl.plist in Resources */,
-				E95EB39E17708F790027A0F9 /* translations.fr.plist in Resources */,
+				E924E0541774A1990002B24C /* InfoPlist.strings in Resources */,
+				E924E06B1774A95D0002B24C /* translations.pl.plist in Resources */,
+				E924E06C1774A9600002B24C /* translations.fr.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		E95EB37C177071E80027A0F9 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		E95EB369177071E80027A0F9 /* Sources */ = {
+		E924E0321774A1980002B24C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E95EB378177071E80027A0F9 /* WDSTranslator.m in Sources */,
-				E95EB3AB1772725C0027A0F9 /* WDSTranslator+UIView.m in Sources */,
-				E95EB3AE1772765F0027A0F9 /* WDSTranslator+UILabel.m in Sources */,
-				E95EB3B11772766F0027A0F9 /* WDSTranslator+UIButton.m in Sources */,
-				E95EB3B4177276910027A0F9 /* WDSTranslator+UITextField.m in Sources */,
+				E9819DE91774D7B900F02F02 /* WDSTranslator+UIView.m in Sources */,
+				E9819DE81774D7B900F02F02 /* WDSTranslator+UITextField.m in Sources */,
+				E924E0611774A2540002B24C /* WDSTranslator.m in Sources */,
+				E924E0641774A29C0002B24C /* WDSTranslator+UILabel.m in Sources */,
+				E9819DE71774D7B900F02F02 /* WDSTranslator+UIButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E95EB379177071E80027A0F9 /* Sources */ = {
+		E924E0421774A1990002B24C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E95EB38F177071E80027A0F9 /* WDSTranslatorTests.m in Sources */,
+				E924E0561774A1990002B24C /* TranslatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E95EB385177071E80027A0F9 /* PBXTargetDependency */ = {
+		E924E04D1774A1990002B24C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E95EB36C177071E80027A0F9 /* Translator */;
-			targetProxy = E95EB384177071E80027A0F9 /* PBXContainerItemProxy */;
+			target = E924E0351774A1980002B24C /* Translator */;
+			targetProxy = E924E04C1774A1990002B24C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E95EB38A177071E80027A0F9 /* InfoPlist.strings */ = {
+		E924E0521774A1990002B24C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E95EB38B177071E80027A0F9 /* en */,
+				E924E0531774A1990002B24C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -317,17 +296,21 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E95EB390177071E80027A0F9 /* Debug */ = {
+		E924E0571774A1990002B24C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -338,39 +321,48 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		E95EB391177071E80027A0F9 /* Release */ = {
+		E924E0581774A1990002B24C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E95EB393177071E80027A0F9 /* Debug */ = {
+		E924E05A1774A1990002B24C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/Translator.dst;
@@ -382,7 +374,7 @@
 			};
 			name = Debug;
 		};
-		E95EB394177071E80027A0F9 /* Release */ = {
+		E924E05B1774A1990002B24C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/Translator.dst;
@@ -394,67 +386,73 @@
 			};
 			name = Release;
 		};
-		E95EB396177071E80027A0F9 /* Debug */ = {
+		E924E05D1774A1990002B24C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Translator/Translator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "TranslatorTests/TranslatorTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		E95EB397177071E80027A0F9 /* Release */ = {
+		E924E05E1774A1990002B24C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Translator/Translator-Prefix.pch";
 				INFOPLIST_FILE = "TranslatorTests/TranslatorTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E95EB368177071E80027A0F9 /* Build configuration list for PBXProject "Translator" */ = {
+		E924E0311774A1980002B24C /* Build configuration list for PBXProject "Translator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E95EB390177071E80027A0F9 /* Debug */,
-				E95EB391177071E80027A0F9 /* Release */,
+				E924E0571774A1990002B24C /* Debug */,
+				E924E0581774A1990002B24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E95EB392177071E80027A0F9 /* Build configuration list for PBXNativeTarget "Translator" */ = {
+		E924E0591774A1990002B24C /* Build configuration list for PBXNativeTarget "Translator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E95EB393177071E80027A0F9 /* Debug */,
-				E95EB394177071E80027A0F9 /* Release */,
+				E924E05A1774A1990002B24C /* Debug */,
+				E924E05B1774A1990002B24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E95EB395177071E80027A0F9 /* Build configuration list for PBXNativeTarget "TranslatorTests" */ = {
+		E924E05C1774A1990002B24C /* Build configuration list for PBXNativeTarget "TranslatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E95EB396177071E80027A0F9 /* Debug */,
-				E95EB397177071E80027A0F9 /* Release */,
+				E924E05D1774A1990002B24C /* Debug */,
+				E924E05E1774A1990002B24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E95EB365177071E80027A0F9 /* Project object */;
+	rootObject = E924E02E1774A1980002B24C /* Project object */;
 }
