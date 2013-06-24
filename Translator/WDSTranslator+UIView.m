@@ -12,11 +12,6 @@
 
 @implementation WDSTranslator (UIView)
 
-- (void)translateView:(UIView *)viewObject
-{
-    [self translateView:viewObject toLanguage:self.translationsLanguageCode];
-}
-
 - (void)translateView:(UIView *)viewObject toLanguage:(NSString *)language
 {
     if ( [[viewObject class] isSubclassOfClass:[UILabel class]] )
@@ -31,6 +26,11 @@
     {
         [self translateTextField:(UITextField *)viewObject toLanguage:language];
     }
+}
+
+- (void)translateView:(UIView *)viewObject
+{
+    [self translateView:viewObject toLanguage:self.translationsLanguageCode];
 }
 
 @end

@@ -12,8 +12,12 @@
 
 @interface WDSTranslator (UILabel)
 
+- (void)translateLabel:(UILabel *)label toLanguage:(NSString *)language;
+
 - (void)translateLabel:(UILabel *)label;
 
-- (void)translateLabel:(UILabel *)label toLanguage:(NSString *)language;
+- (void)translateLabels:(NSArray *)labels toLanguage:(NSString *)language;
+
+- (void)translateLabels:(NSArray *)labels;
 
 @end

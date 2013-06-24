@@ -16,8 +16,8 @@
 
 @interface WDSTranslator (UIView)
 
-- (void)translateView:(UIView *)viewObject;
-
 - (void)translateView:(UIView *)viewObject toLanguage:(NSString *)language;
+
+- (void)translateView:(UIView *)viewObject;
 
 @end

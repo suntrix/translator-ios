@@ -12,8 +12,8 @@
 
 @interface WDSTranslator (UIButton)
 
-- (void)translateButton:(UIButton *)button;
-
 - (void)translateButton:(UIButton *)button toLanguage:(NSString *)language;
+
+- (void)translateButton:(UIButton *)button;
 
 @end

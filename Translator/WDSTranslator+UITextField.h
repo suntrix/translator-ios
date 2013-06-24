@@ -12,8 +12,8 @@
 
 @interface WDSTranslator (UITextField)
 
-- (void)translateTextField:(UITextField *)textField;
-
 - (void)translateTextField:(UITextField *)textField toLanguage:(NSString *)language;
+
+- (void)translateTextField:(UITextField *)textField;
 
 @end

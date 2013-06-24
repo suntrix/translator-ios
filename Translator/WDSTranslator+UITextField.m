@@ -12,14 +12,14 @@
 
 @implementation WDSTranslator (UITextField)
 
-- (void)translateTextField:(UITextField *)textField
-{
-    [self translateTextField:textField toLanguage:self.translationsLanguageCode];
-}
-
 - (void)translateTextField:(UITextField *)textField toLanguage:(NSString *)language
 {
     textField.placeholder = [self translate:textField.placeholder toLanguage:language];
+}
+
+- (void)translateTextField:(UITextField *)textField
+{
+    [self translateTextField:textField toLanguage:self.translationsLanguageCode];
 }
 
 @end

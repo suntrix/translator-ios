@@ -12,7 +12,7 @@
 		E924E0491774A1990002B24C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0391774A1980002B24C /* Foundation.framework */; };
 		E924E04E1774A1990002B24C /* libTranslator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0361774A1980002B24C /* libTranslator.a */; };
 		E924E0541774A1990002B24C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E924E0521774A1990002B24C /* InfoPlist.strings */; };
-		E924E0561774A1990002B24C /* TranslatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E924E0551774A1990002B24C /* TranslatorTests.m */; };
+		E924E0561774A1990002B24C /* WDSTranslatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E924E0551774A1990002B24C /* WDSTranslatorTests.m */; };
 		E924E0611774A2540002B24C /* WDSTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = E924E0601774A2540002B24C /* WDSTranslator.m */; };
 		E924E0641774A29C0002B24C /* WDSTranslator+UILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E924E0631774A29C0002B24C /* WDSTranslator+UILabel.m */; };
 		E924E0661774A4370002B24C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0651774A4370002B24C /* UIKit.framework */; };
@@ -21,6 +21,7 @@
 		E9819DE71774D7B900F02F02 /* WDSTranslator+UIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DE21774D7B900F02F02 /* WDSTranslator+UIButton.m */; };
 		E9819DE81774D7B900F02F02 /* WDSTranslator+UITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DE41774D7B900F02F02 /* WDSTranslator+UITextField.m */; };
 		E9819DE91774D7B900F02F02 /* WDSTranslator+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DE61774D7B900F02F02 /* WDSTranslator+UIView.m */; };
+		E9819DED1775B2F200F02F02 /* WDSTranslatorUILabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DEC1775B2F200F02F02 /* WDSTranslatorUILabelTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,7 @@
 		E924E0471774A1990002B24C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E924E0511774A1990002B24C /* TranslatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TranslatorTests-Info.plist"; sourceTree = "<group>"; };
 		E924E0531774A1990002B24C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E924E0551774A1990002B24C /* TranslatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslatorTests.m; sourceTree = "<group>"; };
+		E924E0551774A1990002B24C /* WDSTranslatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDSTranslatorTests.m; sourceTree = "<group>"; };
 		E924E05F1774A2540002B24C /* WDSTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSTranslator.h; sourceTree = "<group>"; };
 		E924E0601774A2540002B24C /* WDSTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSTranslator.m; sourceTree = "<group>"; };
 		E924E0621774A29C0002B24C /* WDSTranslator+UILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UILabel.h"; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		E9819DE41774D7B900F02F02 /* WDSTranslator+UITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UITextField.m"; sourceTree = "<group>"; };
 		E9819DE51774D7B900F02F02 /* WDSTranslator+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UIView.h"; sourceTree = "<group>"; };
 		E9819DE61774D7B900F02F02 /* WDSTranslator+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UIView.m"; sourceTree = "<group>"; };
+		E9819DEC1775B2F200F02F02 /* WDSTranslatorUILabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSTranslatorUILabelTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,9 +145,10 @@
 		E924E04F1774A1990002B24C /* TranslatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				E9819DEB1775B29A00F02F02 /* Categories */,
+				E924E0551774A1990002B24C /* WDSTranslatorTests.m */,
 				E924E0671774A4620002B24C /* translations.fr.plist */,
 				E924E0681774A4620002B24C /* translations.pl.plist */,
-				E924E0551774A1990002B24C /* TranslatorTests.m */,
 				E924E0501774A1990002B24C /* Supporting Files */,
 			);
 			path = TranslatorTests;
@@ -171,6 +174,14 @@
 				E9819DE41774D7B900F02F02 /* WDSTranslator+UITextField.m */,
 				E9819DE51774D7B900F02F02 /* WDSTranslator+UIView.h */,
 				E9819DE61774D7B900F02F02 /* WDSTranslator+UIView.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		E9819DEB1775B29A00F02F02 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E9819DEC1775B2F200F02F02 /* WDSTranslatorUILabelTests.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -270,7 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E924E0561774A1990002B24C /* TranslatorTests.m in Sources */,
+				E924E0561774A1990002B24C /* WDSTranslatorTests.m in Sources */,
+				E9819DED1775B2F200F02F02 /* WDSTranslatorUILabelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +413,12 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TranslatorTests/TranslatorTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -417,6 +435,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Translator/Translator-Prefix.pch";
 				INFOPLIST_FILE = "TranslatorTests/TranslatorTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};

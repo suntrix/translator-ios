@@ -44,17 +44,6 @@
     self.translationsLanguageCode = [locale objectForKey:NSLocaleLanguageCode];
 }
 
-- (NSString *)translate:(NSString *)text
-{
-    if ( nil == self.translationsLanguageCode )
-    {
-        [NSException raise:@"Translations default language is not set!"
-                    format:@"You need to set it, to use this method."];
-    }
-    
-    return [self translate:text toLanguage:self.translationsLanguageCode];
-}
-
 - (NSString *)translate:(NSString *)text toLanguage:(NSString *)language
 {
     if ( NO == [self __translationsCached:language] )
@@ -71,15 +60,15 @@
     return translation;
 }
 
-- (NSArray *)translateMany:(NSArray *)texts
+- (NSString *)translate:(NSString *)text
 {
     if ( nil == self.translationsLanguageCode )
     {
-        [NSException raise:@"Translations default language is not set!"
-                    format:@"You need to set it, to use this method."];
+        [NSException raise:NSInternalInconsistencyException
+                    format:@"Translations default language code is not set! You need to set it, to use this method."];
     }
     
-    return [self translateMany:texts toLanguage:self.translationsLanguageCode];
+    return [self translate:text toLanguage:self.translationsLanguageCode];
 }
 
 - (NSArray *)translateMany:(NSArray *)texts toLanguage:(NSString *)language
@@ -89,7 +78,26 @@
         [self __cacheTranslations:language];
     }
     
-    return [__translationsCache[language] objectsForKeys:texts notFoundMarker:@""];
+    NSMutableArray *translations = [NSMutableArray arrayWithArray:[__translationsCache[language] objectsForKeys:texts notFoundMarker:@"<!not-found!>"]];    
+    [translations enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if ( [obj isEqualToString:@"<!not-found!>"] )
+        {
+            translations[idx] = texts[idx];
+        }
+    }];
+    
+    return translations;
+}
+
+- (NSArray *)translateMany:(NSArray *)texts
+{
+    if ( nil == self.translationsLanguageCode )
+    {
+        [NSException raise:NSInternalInconsistencyException
+                    format:@"Translations default language code is not set! You need to set it, to use this method."];
+    }
+    
+    return [self translateMany:texts toLanguage:self.translationsLanguageCode];
 }
 
 - (void)loadTranslations:(NSArray *)languages
@@ -135,8 +143,8 @@
     
     if ( nil == path )
     {
-        [NSException raise:[NSString stringWithFormat:@"Translations file for language %@ not found!", language]
-                    format:@"%@.plist file is missing or not readable.", filename];
+        [NSException raise:NSInvalidArgumentException
+                    format:@"Translations file for language %@ not found, %@.plist file is missing or not readable.", language, filename];
     }
     
     [__translationsCache addEntriesFromDictionary:@{language: [NSDictionary dictionaryWithContentsOfFile:path]}];
