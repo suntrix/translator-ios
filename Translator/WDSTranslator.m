@@ -15,9 +15,11 @@
     NSMutableDictionary *   __translationsCache;
 }
 
+- (void)__loadTranslationsIfNeeded:(NSString *)language;
+
 - (BOOL)__translationsCached:(NSString *)language;
 
-- (void)__cacheTranslations:(NSString *)language;
+- (void)__loadTranslations:(NSString *)language;
 
 @end
 
@@ -46,10 +48,7 @@
 
 - (NSString *)translate:(NSString *)text toLanguage:(NSString *)language
 {
-    if ( NO == [self __translationsCached:language] )
-    {
-        [self __cacheTranslations:language];
-    }
+    [self __loadTranslationsIfNeeded:language];
     
     NSString *translation = __translationsCache[language][text];
     if ( nil == translation )
@@ -73,10 +72,7 @@
 
 - (NSArray *)translateMany:(NSArray *)texts toLanguage:(NSString *)language
 {
-    if ( NO == [self __translationsCached:language] )
-    {
-        [self __cacheTranslations:language];
-    }
+    [self __loadTranslationsIfNeeded:language];
     
     NSMutableArray *translations = [NSMutableArray arrayWithArray:[__translationsCache[language] objectsForKeys:texts notFoundMarker:@"<!not-found!>"]];    
     [translations enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
@@ -104,10 +100,7 @@
 {
     for ( NSString *language in languages )
     {
-        if ( NO == [self __translationsCached:language] )
-        {
-            [self __cacheTranslations:language];
-        }
+        [self __loadTranslationsIfNeeded:language];
     }
 }
 
@@ -131,23 +124,45 @@
 
 #pragma mark Private methods
 
+- (void)__loadTranslationsIfNeeded:(NSString *)language
+{
+    if ( NO == [self __translationsCached:language] )
+    {
+        [self __loadTranslations:language];
+    }
+}
+
 - (BOOL)__translationsCached:(NSString *)language
 {
     return [[__translationsCache allKeys] containsObject:language];
 }
 
-- (void)__cacheTranslations:(NSString *)language
+- (void)__loadTranslations:(NSString *)language
 {
     NSString *filename = [NSString stringWithFormat:kWDSTranslatorTranslationsFilenamePattern, language];
-    NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:filename ofType:@"plist"];
+    
+    NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:filename ofType:@"json"];
+    BOOL usingJson = nil != path;
+    
+    if ( nil == path )
+    {
+        path = [[NSBundle bundleForClass:[self class]] pathForResource:filename ofType:@"plist"];
+    }
     
     if ( nil == path )
     {
         [NSException raise:NSInvalidArgumentException
-                    format:@"Translations file for language %@ not found, %@.plist file is missing or not readable.", language, filename];
+                    format:@"Translations file for language %@ not found.", language];
     }
     
-    [__translationsCache addEntriesFromDictionary:@{language: [NSDictionary dictionaryWithContentsOfFile:path]}];
+    if ( usingJson )
+    {
+        [__translationsCache addEntriesFromDictionary:@{language: (NSDictionary *)[NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:path] options:0 error:nil]}];
+    }
+    else
+    {
+        [__translationsCache addEntriesFromDictionary:@{language: [NSDictionary dictionaryWithContentsOfFile:path]}];
+    }
 }
 
 @end
