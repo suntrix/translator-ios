@@ -104,9 +104,19 @@
     }
 }
 
-- (void)clearCache
+- (void)clearCache:(BOOL)all
 {
-    [__translationsCache removeAllObjects];
+    if ( all )
+    {
+        [__translationsCache removeAllObjects];
+    }
+    else
+    {
+        NSMutableArray *keys = [NSMutableArray arrayWithArray:[__translationsCache allKeys]];
+        [keys removeObject:self.translationsLanguageCode];
+        
+        [__translationsCache removeObjectsForKeys:keys];
+    }
 }
 
 #pragma mark Inherited from NSObject

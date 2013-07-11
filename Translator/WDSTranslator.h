@@ -26,6 +26,6 @@
 
 - (void)loadTranslations:(NSArray *)languages;
 
-- (void)clearCache;
+- (void)clearCache:(BOOL)all;
 
 @end
