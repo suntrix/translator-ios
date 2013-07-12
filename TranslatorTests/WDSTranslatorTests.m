@@ -113,12 +113,33 @@
 
 - (void)testTranslateWithNonexistentLanguage
 {
-    XCTFail(@"Need to be implemented!");
+    WDSTranslator *translator = [[WDSTranslator alloc] init];
+    translator.translationsLanguageCode = @"de";
+    
+    NSString *testString = @"TEST123";
+    
+    XCTAssertThrows([translator translate:testString], @"");
 }
 
 - (void)testDoubleTranslate
 {
-    XCTFail(@"Need to be implemented!");
+    WDSTranslator *translator = [[WDSTranslator alloc] init];
+    
+    translator.translationsLanguageCode = @"fr";
+    
+    NSArray *keys = [__testData[@"fr"] allKeys];
+    
+    [keys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        
+        NSString *string = [translator translate:obj];
+        translator.translationsLanguageCode = @"pl";
+        string = [translator translate:string];
+        translator.translationsLanguageCode = @"fr";
+        
+        NSString *frString = __testData[@"fr"][obj];
+        
+        XCTAssertEqualObjects(string, frString, @"");
+    }];
 }
 // ==========================================================================================
 
@@ -133,12 +154,22 @@
 
 - (void)testTranslateManyToLanguageNonexistent
 {
-    XCTFail(@"Not implemented!");
+    WDSTranslator *translator = [[WDSTranslator alloc] init];
+    
+    XCTAssertThrows([translator translateMany:[__testData[@"pl"] allKeys] toLanguage:@"de"], @"");
 }
 
 - (void)testDoubleTranslateManyToLanguage
 {
-    XCTFail(@"Not implemented!");
+    WDSTranslator *translator = [[WDSTranslator alloc] init];
+    
+    NSArray *keys = [__testData[@"pl"] allKeys];
+    
+    NSArray *pl = [translator translateMany:keys toLanguage:@"pl"];
+    
+    NSArray *fr = [translator translateMany:pl toLanguage:@"fr"];
+    
+    XCTAssertEqualObjects(pl, fr, @"");
 }
 // ==========================================================================================
 
@@ -155,12 +186,27 @@
 
 - (void)testTranslateManyWithNonexistentLanguage
 {
-    XCTFail(@"Not implemented!");
+    WDSTranslator *translator = [[WDSTranslator alloc] init];
+    translator.translationsLanguageCode = @"de";
+    
+    XCTAssertThrows([translator translateMany:[__testData[@"pl"] allKeys]], @"");
 }
 
 - (void)testDoubleTranslateMany
 {
-    XCTFail(@"Not implemented!");
+    WDSTranslator *translator = [WDSTranslator sharedObject];
+    
+    translator.translationsLanguageCode = @"fr";
+    
+    NSArray *keys = [__testData[@"fr"] allKeys];
+    
+    NSArray *fr = [translator translateMany:keys];
+    
+    translator.translationsLanguageCode = @"pl";
+    
+    NSArray *pl = [translator translateMany:fr];
+    
+    XCTAssertEqualObjects([translator translateMany:fr], pl, @"");
 }
 // ==========================================================================================
 
