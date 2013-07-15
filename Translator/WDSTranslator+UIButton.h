@@ -16,4 +16,8 @@
 
 - (void)translateButton:(UIButton *)button;
 
+- (void)transtaleButtons:(NSArray *)buttons toLanguage:(NSString *)language;
+
+- (void)translateButtons:(NSArray *)buttons;
+
 @end
