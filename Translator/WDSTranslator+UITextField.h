@@ -16,4 +16,8 @@
 
 - (void)translateTextField:(UITextField *)textField;
 
+- (void)translateTextFields:(NSArray *)textFields toLanguage:(NSString *)language;
+
+- (void)translateTextFields:(NSArray *)textFields;
+
 @end

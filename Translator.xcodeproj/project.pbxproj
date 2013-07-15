@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EC9348617943AB10009D0E3 /* WDSTranslatorUITextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC93485179439C80009D0E3 /* WDSTranslatorUITextFieldTests.m */; };
 		5E334B79179409DB00D71D07 /* WDSTranslatorUIButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E334B7817906F2D00D71D07 /* WDSTranslatorUIButtonTests.m */; };
 		E920EE53178DFB3A00B57E42 /* translations.fr.json in Resources */ = {isa = PBXBuildFile; fileRef = E920EE52178DF99D00B57E42 /* translations.fr.json */; };
 		E924E03A1774A1980002B24C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0391774A1980002B24C /* Foundation.framework */; };
@@ -48,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5EC93485179439C80009D0E3 /* WDSTranslatorUITextFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSTranslatorUITextFieldTests.m; sourceTree = "<group>"; };
 		5E334B7817906F2D00D71D07 /* WDSTranslatorUIButtonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSTranslatorUIButtonTests.m; sourceTree = "<group>"; };
 		E920EE52178DF99D00B57E42 /* translations.fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = translations.fr.json; sourceTree = "<group>"; };
 		E924E0361774A1980002B24C /* libTranslator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTranslator.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				E9819DEC1775B2F200F02F02 /* WDSTranslatorUILabelTests.m */,
+				5EC93485179439C80009D0E3 /* WDSTranslatorUITextFieldTests.m */,
 				5E334B7817906F2D00D71D07 /* WDSTranslatorUIButtonTests.m */,
 			);
 			name = Categories;
@@ -287,6 +290,7 @@
 				5E334B79179409DB00D71D07 /* WDSTranslatorUIButtonTests.m in Sources */,
 				E924E0561774A1990002B24C /* WDSTranslatorTests.m in Sources */,
 				E9819DED1775B2F200F02F02 /* WDSTranslatorUILabelTests.m in Sources */,
+				5EC9348617943AB10009D0E3 /* WDSTranslatorUITextFieldTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
