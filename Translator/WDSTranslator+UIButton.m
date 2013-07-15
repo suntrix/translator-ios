@@ -27,4 +27,27 @@
     [self translateButton:button toLanguage:self.translationsLanguageCode];
 }
 
+- (void)transtaleButtons:(NSArray *)buttons toLanguage:(NSString *)language
+{
+    NSMutableArray *texts = [NSMutableArray array];
+    
+    [buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [texts insertObject:((UIButton*)obj).titleLabel atIndex:idx];
+    }];
+    
+    NSArray *translatedTexts = [self translateMany:texts toLanguage:language];
+    
+    [buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [(UIButton *)obj setTitle:translatedTexts[idx] forState:UIControlStateNormal];
+        [(UIButton *)obj setTitle:translatedTexts[idx] forState:UIControlStateSelected];
+        [(UIButton *)obj setTitle:translatedTexts[idx] forState:UIControlStateHighlighted];
+        [(UIButton *)obj setTitle:translatedTexts[idx] forState:UIControlStateDisabled];
+    }];
+}
+
+- (void)translateButtons:(NSArray *)buttons
+{
+    [self transtaleButtons:buttons toLanguage:self.translationsLanguageCode];
+}
+
 @end
