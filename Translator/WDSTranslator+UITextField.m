@@ -22,4 +22,24 @@
     [self translateTextField:textField toLanguage:self.translationsLanguageCode];
 }
 
+- (void)translateTextFields:(NSArray *)textFields toLanguage:(NSString *)language
+{
+    NSMutableArray *texts = [NSMutableArray array];
+    
+    [textFields enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [texts insertObject:((UITextField *)obj).placeholder atIndex:idx];
+    }];
+    
+    NSArray *translatedTexts = [self translateMany:texts toLanguage:language];
+    
+    [textFields enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        ((UITextField *)obj).placeholder = translatedTexts[idx];
+    }];
+}
+
+- (void)translateTextFields:(NSArray *)textFields
+{
+    [self translateTextFields:textFields toLanguage:self.translationsLanguageCode];
+}
+
 @end
