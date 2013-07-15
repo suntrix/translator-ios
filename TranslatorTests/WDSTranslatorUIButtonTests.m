@@ -205,20 +205,22 @@
     
     [keys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
-        button.titleLabel.text = obj;
+        [button setTitle:obj forState:UIControlStateNormal];
+        [button setTitle:obj forState:UIControlStateSelected];
+        [button setTitle:obj forState:UIControlStateHighlighted];
+        [button setTitle:obj forState:UIControlStateDisabled];
         
-        [buttons insertObject:buttons atIndex:idx];
+        [buttons insertObject:button atIndex:idx];
     }];
     
     NSArray *translations = [__testData[@"pl"] allValues];
     [translator transtaleButtons:buttons toLanguage:@"pl"];
     [translator transtaleButtons:buttons toLanguage:@"fr"];
- 
+    
     [buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         NSString *plString = translations[idx];
-       
-        XCTAssertEqualObjects( (NSString *)(((UIButton*)obj).titleLabel.text), plString, @"");
-//        XCTAssertEqualObjects( (NSString*((UIButton *)obj).titleLabel.text), plString, @"");
+        [translator transtaleButtons:buttons toLanguage:@"pl"];
+        XCTAssertEqualObjects( ((UIButton *)obj).titleLabel.text, plString, @"");
     }];
 }
 
@@ -247,20 +249,62 @@
     [buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         NSString *plString = translations[idx];
         
-        
-                                  //XCTAssertEqualObjects(testedString, plString, @"");
+    XCTAssertEqualObjects( ((UIButton *)obj).titleLabel.text, plString, @"");
     }];
 }
 
-- (void)testTranslateButtonsWithLanguageNonexistent
+- (void)testTranslateLabelsWithNonexistentLanguage
 {
+    WDSTranslator *translator = [[WDSTranslator alloc] init];
     
+    translator.translationsLanguageCode = @"de";
+    
+    NSMutableArray *buttons = [NSMutableArray array];
+    
+    NSArray *keys = [__testData[@"pl"] allKeys];
+    
+    [keys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
+
+        [button setTitle:obj forState:UIControlStateNormal];
+        [button setTitle:obj forState:UIControlStateSelected];
+        [button setTitle:obj forState:UIControlStateHighlighted];
+        [button setTitle:obj forState:UIControlStateDisabled];
+        
+        [buttons insertObject:button atIndex:idx];
+    }];
+    
+    XCTAssertThrows([translator translateButtons:buttons], @"");
 }
 
 - (void)testDoubleTranslateButtons
 {
+    WDSTranslator *translator = [[WDSTranslator alloc] init];
     
-}
+    NSMutableArray *buttons = [NSMutableArray array];
+    
+    NSArray *keys = [__testData[@"pl"] allKeys];
+    
+    [keys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
 
+        [button setTitle:obj forState:UIControlStateNormal];
+        [button setTitle:obj forState:UIControlStateSelected];
+        [button setTitle:obj forState:UIControlStateHighlighted];
+        [button setTitle:obj forState:UIControlStateDisabled];
+       
+        [buttons insertObject:button atIndex:idx];
+    }];
+    
+    NSArray *translations = [__testData[@"pl"] allValues];
+    [translator transtaleButtons:buttons toLanguage:@"pl"];
+    [translator transtaleButtons:buttons toLanguage:@"fr"];
+    [buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSString *plString = translations[idx];
+        
+        XCTAssertEqualObjects(((UIButton *)obj).titleLabel.text, plString, @"");
+    }];
+}
+// ==========================================================================================
 
 @end

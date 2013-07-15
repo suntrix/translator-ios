@@ -32,7 +32,7 @@
     NSMutableArray *texts = [NSMutableArray array];
     
     [buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        [texts insertObject:((UIButton*)obj).titleLabel atIndex:idx];
+        [texts insertObject:((UIButton*)obj).titleLabel.text atIndex:idx];
     }];
     
     NSArray *translatedTexts = [self translateMany:texts toLanguage:language];
