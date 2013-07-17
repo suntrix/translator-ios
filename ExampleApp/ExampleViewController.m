@@ -9,8 +9,8 @@
 #import "ExampleViewController.h"
 
 #import "WDSTranslator.h"
-#import "WDSTranslator+UIButton.h"
 #import "WDSTranslator+UILabel.h"
+#import "WDSTranslator+UIButton.h"
 #import "WDSTranslator+UITextField.h"
 
 @interface ExampleViewController ()
@@ -25,7 +25,10 @@
         
 	// Do any additional setup after loading the view.
     
-
+    WDSTranslator *translator = [WDSTranslator sharedObject];
+    [translator translateLabel:self.translatedLabel];
+    [translator translateButton:self.translatedButton];
+    [translator translateTextField:self.translatedTextField];
 }
 
 - (void)didReceiveMemoryWarning
