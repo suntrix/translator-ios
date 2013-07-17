@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>YES</key>
+	<string>TAK</string>
+	<key>NO</key>
+	<string>NIE</string>
+	<key>Yes</key>
+	<string>Tak</string>
+	<key>No</key>
+	<string>Nie</string>
+	<key>Test string</key>
+	<string>Ciąg testowy</string>
+	<key>Example of translate UILabel</key>
+	<string>Przykład tłumaczenia UILabel</string>
+	<key>Example of translate UIButton</key>
+	<string>Przykład tłumaczenia UIButton</string>
+	<key>Example of translate UITextField</key>
+	<string>Przykład tłumaczenia UITextField</string>
+	<key>UILabel text test information</key>
+	<string>UILabel tekst przykładowej informacji</string>
+	<key>UITextField text test information</key>
+	<string>UITextField tekst przykładowej informacji</string>
+	<key>Touch here !</key>
+	<string>Dotknij tutaj !</string>
+</dict>
+</plist>
