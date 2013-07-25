@@ -32,7 +32,7 @@
     [self translateButton:button toLanguage:self.translationsLanguageCode];
 }
 
-- (void)transtaleButtons:(NSArray *)buttons toLanguage:(NSString *)language
+- (void)translateButtons:(NSArray *)buttons toLanguage:(NSString *)language
 {
     [buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         [self translateButton:(UIButton*)obj toLanguage:language];
@@ -41,7 +41,7 @@
 
 - (void)translateButtons:(NSArray *)buttons
 {
-    [self transtaleButtons:buttons toLanguage:self.translationsLanguageCode];
+    [self translateButtons:buttons toLanguage:self.translationsLanguageCode];
 }
 
 @end
