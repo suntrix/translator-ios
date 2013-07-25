@@ -14,12 +14,17 @@
 
 - (void)translateButton:(UIButton *)button toLanguage:(NSString *)language
 {
-    NSString *translatedText = [self translate:button.titleLabel.text toLanguage:language];
+    NSArray *titles = @[[button titleForState:UIControlStateNormal],
+                        [button titleForState:UIControlStateSelected],
+                        [button titleForState:UIControlStateHighlighted],
+                        [button titleForState:UIControlStateDisabled]];
     
-    [button setTitle:translatedText forState:UIControlStateNormal];
-    [button setTitle:translatedText forState:UIControlStateSelected];
-    [button setTitle:translatedText forState:UIControlStateHighlighted];
-    [button setTitle:translatedText forState:UIControlStateDisabled];
+    NSArray *translatesTitles = [self translateMany:titles toLanguage:language];
+   
+    [button setTitle:translatesTitles[0] forState:UIControlStateNormal];
+    [button setTitle:translatesTitles[1] forState:UIControlStateSelected];
+    [button setTitle:translatesTitles[2] forState:UIControlStateHighlighted];
+    [button setTitle:translatesTitles[3] forState:UIControlStateDisabled];
 }
 
 - (void)translateButton:(UIButton *)button
@@ -29,19 +34,8 @@
 
 - (void)transtaleButtons:(NSArray *)buttons toLanguage:(NSString *)language
 {
-    NSMutableArray *texts = [NSMutableArray array];
-    
     [buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        [texts insertObject:((UIButton*)obj).titleLabel.text atIndex:idx];
-    }];
-    
-    NSArray *translatedTexts = [self translateMany:texts toLanguage:language];
-    
-    [buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        [(UIButton *)obj setTitle:translatedTexts[idx] forState:UIControlStateNormal];
-        [(UIButton *)obj setTitle:translatedTexts[idx] forState:UIControlStateSelected];
-        [(UIButton *)obj setTitle:translatedTexts[idx] forState:UIControlStateHighlighted];
-        [(UIButton *)obj setTitle:translatedTexts[idx] forState:UIControlStateDisabled];
+        [self translateButton:(UIButton*)obj toLanguage:language];
     }];
 }
 

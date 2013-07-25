@@ -44,20 +44,19 @@
     
     NSArray *keys = [__testData[@"pl"] allKeys];
 
-    [keys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
 
-        [button setTitle:obj forState:UIControlStateNormal];
-        [button setTitle:obj forState:UIControlStateSelected];
-        [button setTitle:obj forState:UIControlStateHighlighted];
-        [button setTitle:obj forState:UIControlStateDisabled];
-       
-        [translator translateButton:button toLanguage:@"pl"];
-        NSString *plString = __testData[@"pl"][obj];
-        
-        XCTAssertEqualObjects(button.titleLabel.text, plString, @"");
-    }];
+    [button setTitle:keys[0] forState:UIControlStateNormal];
+    [button setTitle:keys[1] forState:UIControlStateSelected];
+    [button setTitle:keys[2] forState:UIControlStateHighlighted];
+    [button setTitle:keys[3] forState:UIControlStateDisabled];
 
+    [translator translateButton:button toLanguage:@"pl"];
+    
+    XCTAssertTrue([[button titleForState:UIControlStateNormal] isEqualToString:__testData[@"pl"][keys[0]]], @"");
+    XCTAssertTrue([[button titleForState:UIControlStateSelected] isEqualToString:__testData[@"pl"][keys[1]]], @"");
+    XCTAssertTrue([[button titleForState:UIControlStateHighlighted] isEqualToString:__testData[@"pl"][keys[2]]], @"");
+    XCTAssertTrue([[button titleForState:UIControlStateDisabled] isEqualToString:__testData[@"pl"][keys[3]]], @"");
 }
 
 - (void)testTranslateButtonToLanguageNonexistent
@@ -82,7 +81,12 @@
     
     [keys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
-        button.titleLabel.text = obj;
+  
+        [button setTitle:obj forState:UIControlStateNormal];
+        [button setTitle:obj forState:UIControlStateSelected];
+        [button setTitle:obj forState:UIControlStateHighlighted];
+        [button setTitle:obj forState:UIControlStateDisabled];
+        
         
         [translator translateButton:button toLanguage:@"pl"];
         [translator translateButton:button toLanguage:@"fr"];
@@ -106,7 +110,11 @@
     
     [keys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
-        button.titleLabel.text = obj;
+        
+        [button setTitle:obj forState:UIControlStateNormal];
+        [button setTitle:obj forState:UIControlStateSelected];
+        [button setTitle:obj forState:UIControlStateHighlighted];
+        [button setTitle:obj forState:UIControlStateDisabled];
         
         [translator translateButton:button];
         NSString *frString = __testData[@"fr"][obj];
@@ -137,7 +145,11 @@
     
     [keys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
-        button.titleLabel.text = obj;
+       
+        [button setTitle:obj forState:UIControlStateNormal];
+        [button setTitle:obj forState:UIControlStateSelected];
+        [button setTitle:obj forState:UIControlStateHighlighted];
+        [button setTitle:obj forState:UIControlStateDisabled];
         
         [translator translateButton:button];
         translator.translationsLanguageCode = @"pl";
@@ -162,7 +174,11 @@
     
     [keys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
-        button.titleLabel.text = obj;
+
+        [button setTitle:obj forState:UIControlStateNormal];
+        [button setTitle:obj forState:UIControlStateSelected];
+        [button setTitle:obj forState:UIControlStateHighlighted];
+        [button setTitle:obj forState:UIControlStateDisabled];
         
         [buttons insertObject:button atIndex:idx];
     }];
@@ -239,7 +255,11 @@
     
     [keys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
-        button.titleLabel.text = obj;
+
+        [button setTitle:obj forState:UIControlStateNormal];
+        [button setTitle:obj forState:UIControlStateSelected];
+        [button setTitle:obj forState:UIControlStateHighlighted];
+        [button setTitle:obj forState:UIControlStateDisabled];
         
         [buttons insertObject:button atIndex:idx];
     }];
