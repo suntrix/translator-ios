@@ -1,5 +1,5 @@
 //
-//  ExampleViewController.h
+//  SeparateTranslationsViewController.h
 //  Translator
 //
 //  Created by Jacek Wierzbicki-Woś on 16/07/2013.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExampleViewController : UIViewController
+@interface SeparateTranslationsViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *translatedLabel;
 

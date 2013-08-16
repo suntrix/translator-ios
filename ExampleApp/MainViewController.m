@@ -1,23 +1,23 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  ExampleApp
 //
 //  Created by Jacek Wierzbicki-Woś on 16/07/2013.
 //  Copyright (c) 2013 WEB DESIGN STUDIO Sebastian Owodziń. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 
 #import "WDSTranslator.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 {
     NSArray *   __langs;
 }
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad
 {

@@ -8,16 +8,16 @@
 
 #import "WDSTranslator.h"
 
-#import "WDSTranslator+UILabel.h"
-#import "WDSTranslator+UIButton.h"
-#import "WDSTranslator+UITextField.h"
-
 @class UIView;
 
 @interface WDSTranslator (UIView)
 
-- (void)translateView:(UIView *)viewObject toLanguage:(NSString *)language;
+- (void)translateView:(UIView *)view toLanguage:(NSString *)language;
 
-- (void)translateView:(UIView *)viewObject;
+- (void)translateView:(UIView *)view;
+
+- (void)translateView:(UIView *)view onlySubviewsWithTags:(NSArray *)tags toLanguage:(NSString *)language;
+
+- (void)translateView:(UIView *)view onlySubviewsWithTags:(NSArray *)tags;
 
 @end

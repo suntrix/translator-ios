@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  ExampleApp
 //
 //  Created by Jacek Wierzbicki-Woś on 16/07/2013.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITabBarController
+@interface MainViewController : UITableViewController
 
 @end
