@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E334B79179409DB00D71D07 /* WDSTranslatorUIButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E334B7817906F2D00D71D07 /* WDSTranslatorUIButtonTests.m */; };
+		5E72FCFD17BCD9CB00B308AE /* WDSTranslator+UITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E72FCFC17BCD9CB00B308AE /* WDSTranslator+UITextView.m */; };
+		5E72FCFF17BCE0C200B308AE /* WDSTranslatorUITextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E72FCFE17BCE0C200B308AE /* WDSTranslatorUITextViewTests.m */; };
 		5E7744691795512200F700B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0391774A1980002B24C /* Foundation.framework */; };
 		5E77446B1795512200F700B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E77446A1795512200F700B4 /* CoreGraphics.framework */; };
 		5E77446C1795512200F700B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0651774A4370002B24C /* UIKit.framework */; };
@@ -26,7 +29,6 @@
 		5E7744A71795641300F700B4 /* translations.pl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E7744A51795641300F700B4 /* translations.pl.plist */; };
 		5E7744F417957E7500F700B4 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7744F317957E7500F700B4 /* ExampleViewController.m */; };
 		5EC9348617943AB10009D0E3 /* WDSTranslatorUITextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC93485179439C80009D0E3 /* WDSTranslatorUITextFieldTests.m */; };
-		5E334B79179409DB00D71D07 /* WDSTranslatorUIButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E334B7817906F2D00D71D07 /* WDSTranslatorUIButtonTests.m */; };
 		E920EE53178DFB3A00B57E42 /* translations.fr.json in Resources */ = {isa = PBXBuildFile; fileRef = E920EE52178DF99D00B57E42 /* translations.fr.json */; };
 		E924E03A1774A1980002B24C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0391774A1980002B24C /* Foundation.framework */; };
 		E924E0481774A1990002B24C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0471774A1990002B24C /* XCTest.framework */; };
@@ -81,6 +83,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E334B7817906F2D00D71D07 /* WDSTranslatorUIButtonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSTranslatorUIButtonTests.m; sourceTree = "<group>"; };
+		5E72FCFB17BCD9CB00B308AE /* WDSTranslator+UITextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UITextView.h"; sourceTree = "<group>"; };
+		5E72FCFC17BCD9CB00B308AE /* WDSTranslator+UITextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UITextView.m"; sourceTree = "<group>"; };
+		5E72FCFE17BCE0C200B308AE /* WDSTranslatorUITextViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSTranslatorUITextViewTests.m; sourceTree = "<group>"; };
 		5E7744681795512200F700B4 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E77446A1795512200F700B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5E77446F1795512200F700B4 /* ExampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleApp-Info.plist"; sourceTree = "<group>"; };
@@ -102,7 +108,6 @@
 		5E7744F217957E7500F700B4 /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
 		5E7744F317957E7500F700B4 /* ExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
 		5EC93485179439C80009D0E3 /* WDSTranslatorUITextFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSTranslatorUITextFieldTests.m; sourceTree = "<group>"; };
-		5E334B7817906F2D00D71D07 /* WDSTranslatorUIButtonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSTranslatorUIButtonTests.m; sourceTree = "<group>"; };
 		E920EE52178DF99D00B57E42 /* translations.fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = translations.fr.json; sourceTree = "<group>"; };
 		E924E0361774A1980002B24C /* libTranslator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTranslator.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E924E0391774A1980002B24C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -303,6 +308,8 @@
 				E9819DE41774D7B900F02F02 /* WDSTranslator+UITextField.m */,
 				E9819DE51774D7B900F02F02 /* WDSTranslator+UIView.h */,
 				E9819DE61774D7B900F02F02 /* WDSTranslator+UIView.m */,
+				5E72FCFB17BCD9CB00B308AE /* WDSTranslator+UITextView.h */,
+				5E72FCFC17BCD9CB00B308AE /* WDSTranslator+UITextView.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -313,6 +320,7 @@
 				E9819DEC1775B2F200F02F02 /* WDSTranslatorUILabelTests.m */,
 				5EC93485179439C80009D0E3 /* WDSTranslatorUITextFieldTests.m */,
 				5E334B7817906F2D00D71D07 /* WDSTranslatorUIButtonTests.m */,
+				5E72FCFE17BCE0C200B308AE /* WDSTranslatorUITextViewTests.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -490,6 +498,7 @@
 				E9819DE81774D7B900F02F02 /* WDSTranslator+UITextField.m in Sources */,
 				E924E0611774A2540002B24C /* WDSTranslator.m in Sources */,
 				E924E0641774A29C0002B24C /* WDSTranslator+UILabel.m in Sources */,
+				5E72FCFD17BCD9CB00B308AE /* WDSTranslator+UITextView.m in Sources */,
 				E9819DE71774D7B900F02F02 /* WDSTranslator+UIButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +509,7 @@
 			files = (
 				5E334B79179409DB00D71D07 /* WDSTranslatorUIButtonTests.m in Sources */,
 				E924E0561774A1990002B24C /* WDSTranslatorTests.m in Sources */,
+				5E72FCFF17BCE0C200B308AE /* WDSTranslatorUITextViewTests.m in Sources */,
 				E9819DED1775B2F200F02F02 /* WDSTranslatorUILabelTests.m in Sources */,
 				5EC9348617943AB10009D0E3 /* WDSTranslatorUITextFieldTests.m in Sources */,
 			);
