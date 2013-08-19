@@ -8,40 +8,80 @@
 
 #import "MainViewController.h"
 
+#import "TranslationsViewController.h"
 #import "WDSTranslator.h"
 
 @interface MainViewController ()
 {
-    NSArray *   __langs;
+    NSArray *   __tableData;
 }
 
 @end
 
 @implementation MainViewController
 
+#pragma mark UIViewController
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
-    __langs = @[@"pl", @"fr"];
-    
-    WDSTranslator *translator = [WDSTranslator sharedObject];
-    
-    translator.translationsLanguageCode = __langs[0];
+    __tableData = @[
+                    @{@"cellIdentifier" : @"SeparateTranslationsCellIdentifier", @"language" : @"pl"},
+                    @{@"cellIdentifier" : @"SeparateTranslationsCellIdentifier", @"language" : @"fr"},
+                    @{@"cellIdentifier" : @"FullViewTranslationCellIdentifier", @"language" : @"pl"},
+                    @{@"cellIdentifier" : @"FullViewTranslationCellIdentifier", @"language" : @"fr"},
+                    @{@"cellIdentifier" : @"FullViewTranslationWithTagsCellIdentifier", @"language" : @"pl"},
+                    @{@"cellIdentifier" : @"FullViewTranslationWithTagsCellIdentifier", @"language" : @"fr"}
+                    ];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    WDSTranslator *translator = [WDSTranslator sharedObject];
+    if ( [@[@"->SeparateTranslations", @"->FullViewTranslation", @"->FullViewTranslationWithTags"] containsObject:segue.identifier] )
+    {
+        WDSTranslator *translator = [WDSTranslator sharedObject];
+        translator.translationsLanguageCode = __tableData[[self.tableView indexPathForSelectedRow].row][@"language"];
+        
+        TranslationsViewController *viewController = (TranslationsViewController *)segue.destinationViewController;
+        
+        if ( [segue.identifier isEqualToString:@"->SeparateTranslations"] )
+        {
+            viewController.mode = TranslationsViewControllerModeSeparated;
+            viewController.title = @"Separate Translations";
+        }
+        else if ( [segue.identifier isEqualToString:@"->FullViewTranslation"] )
+        {
+            viewController.mode = TranslationsViewControllerModeFullView;
+            viewController.title = @"Full View Translations";
+        }
+        else if ( [segue.identifier isEqualToString:@"->FullViewTranslationWithTags"] )
+        {
+            viewController.mode = TranslationsViewControllerModeFullViewTagsOnly;
+            viewController.title = @"Full View Translations (Tags)";
+        }
+    }
+}
+
+#pragma mark UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [__tableData count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:__tableData[indexPath.row][@"cellIdentifier"]];
     
-    translator.translationsLanguageCode = __langs[item.tag];
+    ((UILabel *)[cell.contentView viewWithTag:1]).text = [__tableData[indexPath.row][@"language"] uppercaseString];
+    
+    return cell;
 }
 
 @end

@@ -27,7 +27,6 @@
 		5E77449E1795518200F700B4 /* libTranslator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0361774A1980002B24C /* libTranslator.a */; };
 		5E7744A61795641300F700B4 /* translations.fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E7744A41795641300F700B4 /* translations.fr.json */; };
 		5E7744A71795641300F700B4 /* translations.pl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E7744A51795641300F700B4 /* translations.pl.plist */; };
-		5E7744F417957E7500F700B4 /* SeparateTranslationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7744F317957E7500F700B4 /* SeparateTranslationsViewController.m */; };
 		5EC9348617943AB10009D0E3 /* WDSTranslatorUITextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC93485179439C80009D0E3 /* WDSTranslatorUITextFieldTests.m */; };
 		E920EE53178DFB3A00B57E42 /* translations.fr.json in Resources */ = {isa = PBXBuildFile; fileRef = E920EE52178DF99D00B57E42 /* translations.fr.json */; };
 		E924E03A1774A1980002B24C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0391774A1980002B24C /* Foundation.framework */; };
@@ -40,11 +39,11 @@
 		E924E0641774A29C0002B24C /* WDSTranslator+UILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E924E0631774A29C0002B24C /* WDSTranslator+UILabel.m */; };
 		E924E0661774A4370002B24C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0651774A4370002B24C /* UIKit.framework */; };
 		E924E06B1774A95D0002B24C /* translations.pl.plist in Resources */ = {isa = PBXBuildFile; fileRef = E924E0681774A4620002B24C /* translations.pl.plist */; };
-		E925DDE917B8CF0D00EA8176 /* WDSTranslator+UIControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E925DDE817B8CF0D00EA8176 /* WDSTranslator+UIControl.m */; };
 		E9819DE71774D7B900F02F02 /* WDSTranslator+UIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DE21774D7B900F02F02 /* WDSTranslator+UIButton.m */; };
 		E9819DE81774D7B900F02F02 /* WDSTranslator+UITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DE41774D7B900F02F02 /* WDSTranslator+UITextField.m */; };
-		E9819DE91774D7B900F02F02 /* WDSTranslator+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DE61774D7B900F02F02 /* WDSTranslator+UIView.m */; };
 		E9819DED1775B2F200F02F02 /* WDSTranslatorUILabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DEC1775B2F200F02F02 /* WDSTranslatorUILabelTests.m */; };
+		E9BF3B2817C21463004F4289 /* WDSTranslator+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BF3B2717C21463004F4289 /* WDSTranslator+UIView.m */; };
+		E9BF3B2E17C222DA004F4289 /* TranslationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BF3B2D17C222DA004F4289 /* TranslationsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +105,6 @@
 		5E7744941795512200F700B4 /* ExampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleAppTests.m; sourceTree = "<group>"; };
 		5E7744A41795641300F700B4 /* translations.fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = translations.fr.json; sourceTree = "<group>"; };
 		5E7744A51795641300F700B4 /* translations.pl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = translations.pl.plist; sourceTree = "<group>"; };
-		5E7744F217957E7500F700B4 /* SeparateTranslationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeparateTranslationsViewController.h; sourceTree = "<group>"; };
-		5E7744F317957E7500F700B4 /* SeparateTranslationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeparateTranslationsViewController.m; sourceTree = "<group>"; };
 		5EC93485179439C80009D0E3 /* WDSTranslatorUITextFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSTranslatorUITextFieldTests.m; sourceTree = "<group>"; };
 		E920EE52178DF99D00B57E42 /* translations.fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = translations.fr.json; sourceTree = "<group>"; };
 		E924E0361774A1980002B24C /* libTranslator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTranslator.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,15 +122,15 @@
 		E924E0651774A4370002B24C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E924E0681774A4620002B24C /* translations.pl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = translations.pl.plist; sourceTree = "<group>"; };
 		E925DDE317B8CE2B00EA8176 /* WDSTranslatorUIKitAddons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDSTranslatorUIKitAddons.h; sourceTree = "<group>"; };
-		E925DDE717B8CF0D00EA8176 /* WDSTranslator+UIControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UIControl.h"; sourceTree = "<group>"; };
-		E925DDE817B8CF0D00EA8176 /* WDSTranslator+UIControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UIControl.m"; sourceTree = "<group>"; };
 		E9819DE11774D7B900F02F02 /* WDSTranslator+UIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UIButton.h"; sourceTree = "<group>"; };
 		E9819DE21774D7B900F02F02 /* WDSTranslator+UIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UIButton.m"; sourceTree = "<group>"; };
 		E9819DE31774D7B900F02F02 /* WDSTranslator+UITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UITextField.h"; sourceTree = "<group>"; };
 		E9819DE41774D7B900F02F02 /* WDSTranslator+UITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UITextField.m"; sourceTree = "<group>"; };
-		E9819DE51774D7B900F02F02 /* WDSTranslator+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UIView.h"; sourceTree = "<group>"; };
-		E9819DE61774D7B900F02F02 /* WDSTranslator+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UIView.m"; sourceTree = "<group>"; };
 		E9819DEC1775B2F200F02F02 /* WDSTranslatorUILabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSTranslatorUILabelTests.m; sourceTree = "<group>"; };
+		E9BF3B2617C21463004F4289 /* WDSTranslator+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UIView.h"; sourceTree = "<group>"; };
+		E9BF3B2717C21463004F4289 /* WDSTranslator+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UIView.m"; sourceTree = "<group>"; };
+		E9BF3B2C17C222DA004F4289 /* TranslationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationsViewController.h; sourceTree = "<group>"; };
+		E9BF3B2D17C222DA004F4289 /* TranslationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +189,8 @@
 				5E7744801795512200F700B4 /* MainViewController.m */,
 				5E7744821795512200F700B4 /* Images.xcassets */,
 				5E77446E1795512200F700B4 /* Supporting Files */,
-				5E7744F217957E7500F700B4 /* SeparateTranslationsViewController.h */,
-				5E7744F317957E7500F700B4 /* SeparateTranslationsViewController.m */,
+				E9BF3B2C17C222DA004F4289 /* TranslationsViewController.h */,
+				E9BF3B2D17C222DA004F4289 /* TranslationsViewController.m */,
 			);
 			path = ExampleApp;
 			sourceTree = "<group>";
@@ -307,18 +304,14 @@
 			children = (
 				E924E0621774A29C0002B24C /* WDSTranslator+UILabel.h */,
 				E924E0631774A29C0002B24C /* WDSTranslator+UILabel.m */,
-				E9819DE51774D7B900F02F02 /* WDSTranslator+UIView.h */,
-				E9819DE61774D7B900F02F02 /* WDSTranslator+UIView.m */,
-				E925DDE717B8CF0D00EA8176 /* WDSTranslator+UIControl.h */,
-				E925DDE817B8CF0D00EA8176 /* WDSTranslator+UIControl.m */,
 				E9819DE11774D7B900F02F02 /* WDSTranslator+UIButton.h */,
 				E9819DE21774D7B900F02F02 /* WDSTranslator+UIButton.m */,
 				E9819DE31774D7B900F02F02 /* WDSTranslator+UITextField.h */,
 				E9819DE41774D7B900F02F02 /* WDSTranslator+UITextField.m */,
-				E9819DE51774D7B900F02F02 /* WDSTranslator+UIView.h */,
-				E9819DE61774D7B900F02F02 /* WDSTranslator+UIView.m */,
 				5E72FCFB17BCD9CB00B308AE /* WDSTranslator+UITextView.h */,
 				5E72FCFC17BCD9CB00B308AE /* WDSTranslator+UITextView.m */,
+				E9BF3B2617C21463004F4289 /* WDSTranslator+UIView.h */,
+				E9BF3B2717C21463004F4289 /* WDSTranslator+UIView.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -485,7 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7744811795512200F700B4 /* MainViewController.m in Sources */,
-				5E7744F417957E7500F700B4 /* SeparateTranslationsViewController.m in Sources */,
+				E9BF3B2E17C222DA004F4289 /* TranslationsViewController.m in Sources */,
 				5E7744781795512200F700B4 /* AppDelegate.m in Sources */,
 				5E7744741795512200F700B4 /* main.m in Sources */,
 			);
@@ -503,13 +496,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E925DDE917B8CF0D00EA8176 /* WDSTranslator+UIControl.m in Sources */,
-				E9819DE91774D7B900F02F02 /* WDSTranslator+UIView.m in Sources */,
 				E9819DE81774D7B900F02F02 /* WDSTranslator+UITextField.m in Sources */,
 				E924E0611774A2540002B24C /* WDSTranslator.m in Sources */,
 				E924E0641774A29C0002B24C /* WDSTranslator+UILabel.m in Sources */,
 				5E72FCFD17BCD9CB00B308AE /* WDSTranslator+UITextView.m in Sources */,
 				E9819DE71774D7B900F02F02 /* WDSTranslator+UIButton.m in Sources */,
+				E9BF3B2817C21463004F4289 /* WDSTranslator+UIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

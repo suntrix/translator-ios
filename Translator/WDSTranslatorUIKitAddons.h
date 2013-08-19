@@ -10,10 +10,13 @@
 #define Translator_WDSTranslatorUIKitAddons_h
 
 #import "WDSTranslator+UILabel.h"
-#import "WDSTranslator+UIView.h"
 
-#import "WDSTranslator+UIControl.h"
 #import "WDSTranslator+UIButton.h"
+
 #import "WDSTranslator+UITextField.h"
+
+#import "WDSTranslator+UITextView.h"
+
+#import "WDSTranslator+UIView.h"
 
 #endif

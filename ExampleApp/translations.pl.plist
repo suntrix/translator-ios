@@ -8,5 +8,7 @@
 	<string>Przycisk</string>
 	<key>placeholder text</key>
 	<string>tekst zastępczy</string>
+	<key>example text</key>
+	<string>przykładowy tekst</string>
 </dict>
 </plist>
