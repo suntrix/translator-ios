@@ -36,13 +36,6 @@
     [super tearDown];
 }
 
-- (void)testTranslatorObjectInit
-{
-    WDSTranslator *translator = [[WDSTranslator alloc] init];
-    
-    XCTAssertTrue([translator isMemberOfClass:[WDSTranslator class]], @"");
-}
-
 - (void)testLoadTranslations
 {
     WDSTranslator *translator = [[WDSTranslator alloc] init];
