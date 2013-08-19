@@ -8,7 +8,7 @@
 
 #import "WDSTranslator.h"
 
-#define kWDSTranslatorTranslationsFilenamePattern @"translations.%@"
+#define kWDSTranslatorTranslationsFilenamePattern @"translations_%@"
 
 @interface WDSTranslator ()
 {

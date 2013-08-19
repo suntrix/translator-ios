@@ -25,10 +25,10 @@
 		5E7744931795512200F700B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E7744911795512200F700B4 /* InfoPlist.strings */; };
 		5E7744951795512200F700B4 /* ExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7744941795512200F700B4 /* ExampleAppTests.m */; };
 		5E77449E1795518200F700B4 /* libTranslator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0361774A1980002B24C /* libTranslator.a */; };
-		5E7744A61795641300F700B4 /* translations.fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E7744A41795641300F700B4 /* translations.fr.json */; };
-		5E7744A71795641300F700B4 /* translations.pl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E7744A51795641300F700B4 /* translations.pl.plist */; };
+		5E7744A61795641300F700B4 /* translations_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E7744A41795641300F700B4 /* translations_fr.json */; };
+		5E7744A71795641300F700B4 /* translations_pl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E7744A51795641300F700B4 /* translations_pl.plist */; };
 		5EC9348617943AB10009D0E3 /* WDSTranslatorUITextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC93485179439C80009D0E3 /* WDSTranslatorUITextFieldTests.m */; };
-		E920EE53178DFB3A00B57E42 /* translations.fr.json in Resources */ = {isa = PBXBuildFile; fileRef = E920EE52178DF99D00B57E42 /* translations.fr.json */; };
+		E920EE53178DFB3A00B57E42 /* translations_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = E920EE52178DF99D00B57E42 /* translations_fr.json */; };
 		E924E03A1774A1980002B24C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0391774A1980002B24C /* Foundation.framework */; };
 		E924E0481774A1990002B24C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0471774A1990002B24C /* XCTest.framework */; };
 		E924E0491774A1990002B24C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0391774A1980002B24C /* Foundation.framework */; };
@@ -38,7 +38,7 @@
 		E924E0611774A2540002B24C /* WDSTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = E924E0601774A2540002B24C /* WDSTranslator.m */; };
 		E924E0641774A29C0002B24C /* WDSTranslator+UILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E924E0631774A29C0002B24C /* WDSTranslator+UILabel.m */; };
 		E924E0661774A4370002B24C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924E0651774A4370002B24C /* UIKit.framework */; };
-		E924E06B1774A95D0002B24C /* translations.pl.plist in Resources */ = {isa = PBXBuildFile; fileRef = E924E0681774A4620002B24C /* translations.pl.plist */; };
+		E924E06B1774A95D0002B24C /* translations_pl.plist in Resources */ = {isa = PBXBuildFile; fileRef = E924E0681774A4620002B24C /* translations_pl.plist */; };
 		E9819DE71774D7B900F02F02 /* WDSTranslator+UIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DE21774D7B900F02F02 /* WDSTranslator+UIButton.m */; };
 		E9819DE81774D7B900F02F02 /* WDSTranslator+UITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DE41774D7B900F02F02 /* WDSTranslator+UITextField.m */; };
 		E9819DED1775B2F200F02F02 /* WDSTranslatorUILabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9819DEC1775B2F200F02F02 /* WDSTranslatorUILabelTests.m */; };
@@ -103,10 +103,10 @@
 		5E7744901795512200F700B4 /* ExampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleAppTests-Info.plist"; sourceTree = "<group>"; };
 		5E7744921795512200F700B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E7744941795512200F700B4 /* ExampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleAppTests.m; sourceTree = "<group>"; };
-		5E7744A41795641300F700B4 /* translations.fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = translations.fr.json; sourceTree = "<group>"; };
-		5E7744A51795641300F700B4 /* translations.pl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = translations.pl.plist; sourceTree = "<group>"; };
+		5E7744A41795641300F700B4 /* translations_fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = translations_fr.json; sourceTree = "<group>"; };
+		5E7744A51795641300F700B4 /* translations_pl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = translations_pl.plist; sourceTree = "<group>"; };
 		5EC93485179439C80009D0E3 /* WDSTranslatorUITextFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSTranslatorUITextFieldTests.m; sourceTree = "<group>"; };
-		E920EE52178DF99D00B57E42 /* translations.fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = translations.fr.json; sourceTree = "<group>"; };
+		E920EE52178DF99D00B57E42 /* translations_fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = translations_fr.json; sourceTree = "<group>"; };
 		E924E0361774A1980002B24C /* libTranslator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTranslator.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E924E0391774A1980002B24C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E924E03D1774A1980002B24C /* Translator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Translator-Prefix.pch"; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		E924E0621774A29C0002B24C /* WDSTranslator+UILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UILabel.h"; sourceTree = "<group>"; };
 		E924E0631774A29C0002B24C /* WDSTranslator+UILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UILabel.m"; sourceTree = "<group>"; };
 		E924E0651774A4370002B24C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E924E0681774A4620002B24C /* translations.pl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = translations.pl.plist; sourceTree = "<group>"; };
+		E924E0681774A4620002B24C /* translations_pl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = translations_pl.plist; sourceTree = "<group>"; };
 		E925DDE317B8CE2B00EA8176 /* WDSTranslatorUIKitAddons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDSTranslatorUIKitAddons.h; sourceTree = "<group>"; };
 		E9819DE11774D7B900F02F02 /* WDSTranslator+UIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WDSTranslator+UIButton.h"; sourceTree = "<group>"; };
 		E9819DE21774D7B900F02F02 /* WDSTranslator+UIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WDSTranslator+UIButton.m"; sourceTree = "<group>"; };
@@ -180,8 +180,8 @@
 		5E77446D1795512200F700B4 /* ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				5E7744A41795641300F700B4 /* translations.fr.json */,
-				5E7744A51795641300F700B4 /* translations.pl.plist */,
+				5E7744A41795641300F700B4 /* translations_fr.json */,
+				5E7744A51795641300F700B4 /* translations_pl.plist */,
 				5E7744761795512200F700B4 /* AppDelegate.h */,
 				5E7744771795512200F700B4 /* AppDelegate.m */,
 				5E7744791795512200F700B4 /* MainStoryboard.storyboard */,
@@ -283,8 +283,8 @@
 			children = (
 				E9819DEB1775B29A00F02F02 /* Categories */,
 				E924E0551774A1990002B24C /* WDSTranslatorTests.m */,
-				E920EE52178DF99D00B57E42 /* translations.fr.json */,
-				E924E0681774A4620002B24C /* translations.pl.plist */,
+				E920EE52178DF99D00B57E42 /* translations_fr.json */,
+				E924E0681774A4620002B24C /* translations_pl.plist */,
 				E924E0501774A1990002B24C /* Supporting Files */,
 			);
 			path = TranslatorTests;
@@ -444,11 +444,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E7744A61795641300F700B4 /* translations.fr.json in Resources */,
+				5E7744A61795641300F700B4 /* translations_fr.json in Resources */,
 				5E7744831795512200F700B4 /* Images.xcassets in Resources */,
 				5E77447B1795512200F700B4 /* MainStoryboard.storyboard in Resources */,
 				5E7744721795512200F700B4 /* InfoPlist.strings in Resources */,
-				5E7744A71795641300F700B4 /* translations.pl.plist in Resources */,
+				5E7744A71795641300F700B4 /* translations_pl.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,8 +465,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E924E0541774A1990002B24C /* InfoPlist.strings in Resources */,
-				E920EE53178DFB3A00B57E42 /* translations.fr.json in Resources */,
-				E924E06B1774A95D0002B24C /* translations.pl.plist in Resources */,
+				E920EE53178DFB3A00B57E42 /* translations_fr.json in Resources */,
+				E924E06B1774A95D0002B24C /* translations_pl.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
